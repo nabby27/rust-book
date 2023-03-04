@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "functions",
+    "variables",
+    "branches",
+    "loops",
+]
