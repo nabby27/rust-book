@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  rust:
+    image: "rust:1.67.1-alpine"
+    container_name: rust_app_chapter_04
+    user: 1000:1000
+    tty: true
+    working_dir: "/app"
+    volumes:
+      - .:/app:rw,Z
+      - cache:/usr/local/cargo
+
+volumes:
+  cache:
